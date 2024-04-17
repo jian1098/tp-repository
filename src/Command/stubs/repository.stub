@@ -1,0 +1,23 @@
+<?php
+
+namespace {%namespace%};
+
+use think\App;
+use app\common\model\{%modelName%};
+use Jian1098\TpRepository\Repository;
+
+/**
+ * Class {%className%}
+ */
+class {%className%} extends Repository
+{
+    protected $model;
+
+    public function __construct()
+    {
+        parent::__construct(new App());
+        //绑定模型
+        $this->model = new {%modelName%}();
+    }
+
+}
