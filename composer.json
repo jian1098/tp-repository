@@ -1,0 +1,22 @@
+{
+    "name": "jian1098/tp-repository",
+    "description": "thinkphp框架命令行创建Repository和Transform Class(即仓库层和转化器，基于controller-service-repository目录架构)",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "topthink/framework": ">=5.0"
+    },
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "Jian1098\\TpRepository\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jian1098",
+            "email": "jian1098@qq.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
