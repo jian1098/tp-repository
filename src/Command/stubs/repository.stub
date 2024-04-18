@@ -3,7 +3,7 @@
 namespace {%namespace%};
 
 use think\App;
-use app\common\model\{%modelName%};
+use app\model\{%modelName%};
 use Jian1098\TpRepository\Repository;
 
 /**

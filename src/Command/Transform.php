@@ -19,8 +19,8 @@ class Transform extends Make
         return __DIR__ . DIRECTORY_SEPARATOR . 'stubs' . DIRECTORY_SEPARATOR . 'transform.stub';
     }
 
-    protected function getNamespace($appNamespace, $module)
+    protected function getNamespace(string $app): string
     {
-        return parent::getNamespace($appNamespace, $module) . '\transform';
+        return parent::getNamespace($app) . '\\' . 'transform';
     }
 }

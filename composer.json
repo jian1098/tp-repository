@@ -3,8 +3,8 @@
     "description": "thinkphp框架命令行创建Repository和Transform Class(即仓库层和转化器，基于controller-service-repository目录架构)",
     "type": "library",
     "require": {
-        "php": ">=7.1",
-        "topthink/framework": "5.*"
+        "php": ">=7.2.5",
+        "topthink/framework": "^6.1.0"
     },
     "license": "Apache-2.0",
     "autoload": {

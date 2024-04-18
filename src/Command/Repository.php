@@ -23,9 +23,9 @@ class Repository extends Make
         return $stubPath . 'repository.stub';
     }
 
-    protected function getNamespace($appNamespace, $module)
+    protected function getNamespace(string $app): string
     {
-        return parent::getNamespace($appNamespace, $module) . '\repository';
+        return parent::getNamespace($app) . '\\' . 'repository';
     }
 
     protected function buildClass($name)
