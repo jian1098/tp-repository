@@ -49,7 +49,7 @@ thinkphp框架命令行创建Repository和Transform Class(即仓库层和转化�
     ];
     ```
 
-  配置完后，在命令行执行`php think`命令，可以看到增加了`repository`和`make:transform`命令
+  配置完后，在命令行执行`php think`命令，可以看到增加了`make:repository`和`make:transform`命令
 
     ```bash
       ...
@@ -146,7 +146,7 @@ thinkphp框架命令行创建Repository和Transform Class(即仓库层和转化�
           //使用repository查询数据
           $data = $repository->first(1);
   
-          //使用转换器将结果
+          //使用转换器将查询结果处理
           echo json_encode($transform->transform($data), JSON_UNESCAPED_UNICODE);
       }
   }
